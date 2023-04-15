@@ -1,5 +1,7 @@
 Utility types and validators for typesafe work with json in typescript.
 
+<a href="https://bundlejs.com/?q=%40mellkam%2Fjson"><img src="https://deno.bundlejs.com/?q=@mellkam/json&badge=minified"></a>
+
 # Installation
 
 ```bash
