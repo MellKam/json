@@ -1,6 +1,6 @@
 import { z } from "zod";
 import { faker } from "@faker-js/faker";
-import { JSONValue, isJsonObject } from ".";
+import { JSONValue, isJSONValue } from "./index";
 
 const jsonSchema: z.ZodType<JSONValue> = z.lazy(() =>
   z.union([
@@ -28,6 +28,6 @@ console.time("@mellkam/json");
 Array(10000)
   .fill(0)
   .forEach(() => {
-    isJsonObject(json);
+    isJSONValue(json);
   });
 console.timeEnd("@mellkam/json");

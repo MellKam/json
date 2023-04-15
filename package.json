@@ -1,6 +1,18 @@
 {
   "name": "@mellkam/json",
   "type": "module",
+  "version": "0.1.0",
+  "description": "Typesafe json utility",
+  "module": "dist/index.js",
+  "main": "dist/index.cjs",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist/",
+    "index.ts",
+    "LICENSE",
+    "package.json",
+    "README.md"
+  ],
   "devDependencies": {
     "typescript": "5.0.4",
     "vite": "4.2.1",
@@ -14,5 +26,17 @@
     "build": "vite build && tsc --emitDeclarationOnly --declaration --outDir dist ./index.ts",
     "test": "vitest",
     "bench": "tsx ./bench.ts"
-  }
+  },
+  "author": {
+    "name": "Artem Melnyk",
+    "url": "https://github.com/MellKam"
+  },
+  "homepage": "https://github.com/MellKam/json/readme",
+  "keywords": [
+    "json",
+    "utility",
+    "types",
+    "validator",
+    "typescript"
+  ]
 }
