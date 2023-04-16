@@ -19,6 +19,8 @@ JSON.stringify({ ... } as JSONValue)
 isJSONValue({ key: new Map() }) // false
 ```
 
+> In the case of cyclic objects, the validator gets into an infinite loop.
+
 # Validator benchmark
 
 594 times faster than zod json schema 
