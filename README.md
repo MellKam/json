@@ -16,6 +16,7 @@ import { type JSONValue, isJSONValue } from "@mellkam/json";
 JSON.parse("...") as JSONValue;
 JSON.stringify({ ... } as JSONValue)
 
+isJSONValue({ key: "value" }) // true
 isJSONValue({ key: new Map() }) // false
 ```
 

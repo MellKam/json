@@ -58,12 +58,16 @@ export const isJSONOptionalPrimitive = (
   return isJSONPrimitive(value) || value === undefined;
 };
 
-export const isJSONOptionalArray = (value: unknown) => {
+export const isJSONOptionalArray = (
+  value: unknown
+): value is JSONOptionalArray => {
   if (!Array.isArray(value)) return false;
   return value.every(isJSONOptinoalValue);
 };
 
-export const isJSONOptionalObject = (value: unknown) => {
+export const isJSONOptionalObject = (
+  value: unknown
+): value is JSONOptionalObject => {
   if (
     typeof value !== "object" ||
     value === null ||
